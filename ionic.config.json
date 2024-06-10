@@ -1,0 +1,7 @@
+{
+  "name": "todohive",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

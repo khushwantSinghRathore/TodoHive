@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-start',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./start.page.scss'],
 })
 export class StartPage implements OnInit {
+  constructor(private route: Router) {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  toSignIn() {
+    this.route.navigateByUrl('/signin');
   }
-
 }

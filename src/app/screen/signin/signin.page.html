@@ -1,1 +1,16 @@
-<ion-content [fullscreen]="true" class="grade"> </ion-content>
+<ion-content [fullscreen]="true" class="grade">
+  <div class="headerlogo">
+    <h1><img src="assets/logo.png" class="logo" />TodoHive</h1>
+  </div>
+  <div class="center">
+    <h3>Welcome Back !</h3>
+
+    <ion-input type="text" placeholder="Username" color="dark"></ion-input>
+    <ion-input type="password" placeholder="Password" color="dark"> </ion-input>
+    <ion-button color="dark" expand="block"> Login </ion-button>
+    <ion-button color="light" expand="block">
+      <ion-icon name="logo-google"></ion-icon> Sign in with Google</ion-button
+    >
+    <p>Don’t have an account? <span (click)="toSignUp()">Sign up </span></p>
+  </div>
+</ion-content>

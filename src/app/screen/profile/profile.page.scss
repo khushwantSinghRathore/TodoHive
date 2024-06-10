@@ -1,0 +1,43 @@
+.half {
+  height: 40vh;
+  background: url("/assets/gradientMesh.png") 0 0/100% 100% no-repeat;
+  text-align: center;
+
+  ion-avatar {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  p {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: larger;
+  }
+}
+
+.center {
+  width: 80%;
+  margin-top: 10%;
+  p {
+    text-align: start;
+  }
+
+  div {
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 5%;
+  }
+  ion-button {
+    margin-top: 10%;
+    border-radius: 8px;
+
+    --padding-bottom: 5%;
+    --padding-top: 5%;
+  }
+}

@@ -1,13 +1,14 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>profile</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">profile</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="half">
+    <ion-avatar>
+      <img src="assets/usericon.png" />
+    </ion-avatar>
+    <p>Khushwant Singh</p>
+  </div>
+  <div class="center">
+    <p>Email</p>
+    <div>{{ email}}</div>
+
+    <ion-button color="danger" (click)="toSignIn()">Logout</ion-button>
+  </div>
 </ion-content>

@@ -12,7 +12,7 @@
       </ion-col>
     </ion-row>
 
-    <ion-row style="margin-top: 10%; width: 90%; margin: auto">
+    <ion-row style="width: 90%; margin: auto; margin-top: 10%">
       <ion-col size="6" *ngFor="let cat of categories">
         <ion-card [ngStyle]="{'background': cat.color} " class="mycard">
           <p>
@@ -27,6 +27,42 @@
             </ion-col>
           </ion-row>
         </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="width: 86%; margin: auto; margin-top: 5%">
+      <ion-col> <p>Today’s Tasks</p></ion-col>
+    </ion-row>
+
+    <ion-row style="width: 86%; margin: auto; margin-top: 5%">
+      <ion-col *ngFor="let item of [1,2,3,4]">
+        <ion-item lines="none">
+          <ion-checkbox labelPlacement="end" slot="start"></ion-checkbox>
+
+          <div class="des">
+            <p class="taskname">Email to John</p>
+            <p class="tasktime">08:00 AM to 12:00 PM</p>
+          </div>
+
+          <ion-icon name="create" slot="end"></ion-icon>
+          <ion-icon name="trash" slot="end"></ion-icon>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row
+      style="
+        width: 86%;
+        margin: auto;
+        position: absolute;
+        bottom: 1%;
+        margin-left: 7%;
+      "
+    >
+      <ion-col>
+        <ion-button class="createbtn" expand="block"
+          >Create new task</ion-button
+        >
       </ion-col>
     </ion-row>
   </ion-grid>

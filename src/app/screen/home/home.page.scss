@@ -57,3 +57,31 @@
     margin-bottom: 5%;
   }
 }
+
+ion-item {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 5%;
+}
+
+.des {
+  text-align: center;
+  width: 100%;
+
+  p {
+    margin: 2%;
+  }
+  .taskname {
+    font-size: larger;
+    font-weight: 600;
+  }
+  .tasktime {
+    font-size: small;
+  }
+}
+
+.createbtn {
+  --background: #9747ff;
+  --padding-bottom: 5%;
+  --padding-top: 5%;
+}

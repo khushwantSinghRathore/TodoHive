@@ -1,0 +1,51 @@
+.toprow {
+  width: 90%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+  .mid {
+    text-align: center;
+  }
+
+  .last {
+    text-align: end;
+  }
+}
+
+.row90 {
+  width: 90%;
+  margin: auto;
+}
+
+ion-input {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-left: 10px !important;
+}
+
+.horizon {
+  overflow: auto;
+  white-space: nowrap;
+
+  ion-button {
+    display: inline-block;
+    margin-right: 2%;
+    --border-radius: 9px;
+  }
+}
+::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+ion-textarea {
+  border: 1px solid black;
+  border-radius: 9px;
+  font-size: smaller;
+  padding: 5px;
+}
+
+.calitem {
+  border: 1px solid black;
+  border-radius: 9px;
+}

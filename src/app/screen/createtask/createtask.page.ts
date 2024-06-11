@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./createtask.page.scss'],
 })
 export class CreatetaskPage implements OnInit {
+  categ = 'project';
+  priority = 'low';
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  clicked(btn: any) {
+    this.categ = btn;
   }
 
+  clickedPT(btn: any) {
+    this.priority = btn;
+  }
 }

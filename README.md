@@ -1,4 +1,4 @@
-# Notes App UI Design
+# Todo Hive App UI Design
 
 Figma mobile app designed by [todo Hive] on Figma
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +14,15 @@ export class HomePage implements OnInit {
     { icon: 'bag', name: 'Groceries', num: 7, color: '#EDBE7D' },
   ];
 
-  constructor() {}
+  constructor(private route: Router) {}
 
   ngOnInit() {}
+
+  profile() {
+    this.route.navigateByUrl('/profile');
+  }
+
+  task() {
+    this.route.navigateByUrl('/createtask');
+  }
 }

@@ -14,4 +14,8 @@ export class SigninPage implements OnInit {
   toSignUp() {
     this.route.navigateByUrl('/signup');
   }
+
+  login() {
+    this.route.navigateByUrl('/home');
+  }
 }

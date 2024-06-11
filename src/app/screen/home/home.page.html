@@ -6,7 +6,7 @@
         <p>You have work today</p>
       </ion-col>
       <ion-col class="profile">
-        <ion-avatar>
+        <ion-avatar (click)="profile()">
           <img src="assets/usericon.png" />
         </ion-avatar>
       </ion-col>
@@ -60,7 +60,7 @@
       "
     >
       <ion-col>
-        <ion-button class="createbtn" expand="block"
+        <ion-button class="createbtn" expand="block" (click)="task()"
           >Create new task</ion-button
         >
       </ion-col>

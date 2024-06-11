@@ -2,7 +2,7 @@
   <ion-grid>
     <ion-row class="toprow">
       <ion-col>
-        <ion-icon name="arrow-back"></ion-icon>
+        <ion-icon name="arrow-back" (click)="back()"></ion-icon>
       </ion-col>
       <ion-col size="9" class="mid"> Create a new task </ion-col>
       <ion-col class="last"><ion-icon name="menu"></ion-icon></ion-col>
@@ -101,7 +101,10 @@
     </ion-row>
     <ion-row>
       <ion-col style="text-align: center">
-        <ion-button style="--background: rgba(151, 71, 255, 1)">
+        <ion-button
+          style="--background: rgba(151, 71, 255, 1)"
+          (click)="back()"
+        >
           Create task
         </ion-button>
       </ion-col>

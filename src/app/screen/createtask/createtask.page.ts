@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-createtask',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class CreatetaskPage implements OnInit {
   categ = 'project';
   priority = 'low';
-  constructor() {}
+  constructor(private route: Router) {}
 
   ngOnInit() {}
 
@@ -18,5 +19,9 @@ export class CreatetaskPage implements OnInit {
 
   clickedPT(btn: any) {
     this.priority = btn;
+  }
+
+  back() {
+    this.route.navigateByUrl('/home');
   }
 }

@@ -7,8 +7,10 @@
 
     <ion-input type="text" placeholder="Username" color="dark"></ion-input>
     <ion-input type="password" placeholder="Password" color="dark"> </ion-input>
-    <ion-button color="dark" expand="block"> Login </ion-button>
-    <ion-button color="light" expand="block">
+    <ion-button color="dark" expand="block" (click)="login()">
+      Login
+    </ion-button>
+    <ion-button color="light" expand="block" (click)="login()">
       <ion-icon name="logo-google"></ion-icon> Sign in with Google</ion-button
     >
     <p>Don’t have an account? <span (click)="toSignUp()">Sign up </span></p>

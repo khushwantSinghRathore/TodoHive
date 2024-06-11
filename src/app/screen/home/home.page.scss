@@ -1,3 +1,59 @@
-// ion-content {
-//   --background: url("/assets/gradientMesh.png") 0 0/100% 100% no-repeat;
-// }
+.header {
+  width: 90%;
+  margin: auto;
+
+  .name {
+    text-align: start;
+    margin-top: 10px;
+
+    .n1 {
+      font-weight: 600;
+      font-size: larger;
+    }
+
+    p {
+      margin: 5px;
+      font-size: small;
+    }
+  }
+
+  .profile {
+    text-align: -webkit-right;
+
+    ion-avatar {
+      border: 1px solid black;
+    }
+  }
+}
+
+.mycard {
+  border-radius: 8px;
+  margin: 3%;
+  p {
+    white-space: nowrap;
+    margin: 5%;
+    ion-icon {
+      background: white;
+      border-radius: 50%;
+      padding: 5px;
+      margin-left: 5%;
+      margin-top: 5%;
+      font-size: 15px;
+    }
+  }
+
+  .categ {
+    margin-left: 5%;
+    color: black;
+    font-weight: 600;
+    font-size: larger;
+    margin-bottom: 5%;
+  }
+
+  .num {
+    color: black;
+    font-weight: 600;
+    font-size: larger;
+    margin-bottom: 5%;
+  }
+}

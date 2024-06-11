@@ -1,1 +1,33 @@
-<ion-content [fullscreen]="true"> </ion-content>
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row class="header">
+      <ion-col class="name">
+        <p class="n1">Hello Khushwant</p>
+        <p>You have work today</p>
+      </ion-col>
+      <ion-col class="profile">
+        <ion-avatar>
+          <img src="assets/usericon.png" />
+        </ion-avatar>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="margin-top: 10%; width: 90%; margin: auto">
+      <ion-col size="6" *ngFor="let cat of categories">
+        <ion-card [ngStyle]="{'background': cat.color} " class="mycard">
+          <p>
+            <ion-icon [name]="cat.icon"></ion-icon>
+          </p>
+          <ion-row>
+            <ion-col class="categ" size="8">
+              <p>{{cat.name}}</p>
+            </ion-col>
+            <ion-col class="num">
+              <p>{{cat.num}}</p>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
